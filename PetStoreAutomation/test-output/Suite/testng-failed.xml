@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="api.utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="api.test.UserTest">
+        <methods>
+          <include name="aftertest"/>
+          <include name="beforeTestMethod"/>
+          <include name="testDeleteUserByUserName"/>
+          <include name="testEndToEndWorkflow"/>
+          <include name="testUpdateUserByName"/>
+          <include name="beforeMethod"/>
+          <include name="setupData"/>
+          <include name="testGetUserDetails"/>
+          <include name="afterMethod"/>
+          <include name="testCreateUserByName"/>
+        </methods>
+      </class> <!-- api.test.UserTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
